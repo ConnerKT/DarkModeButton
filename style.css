@@ -3,6 +3,7 @@ body {
 }
 header {
     text-align: center;
+    color:black;
 }
 p {
     text-align:center;
@@ -14,4 +15,11 @@ img {
     display:block;
     margin-left: auto;
     margin-right: auto;
+}
+.darkmode {
+ background-color:black;
+
+}
+.lightmode {
+    background-color:white;
 }

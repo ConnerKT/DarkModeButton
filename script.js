@@ -15,11 +15,18 @@ function dark() {
 
         //grab element's CSS values using built-in function
         let elementStyle = getComputedStyle(element)    //Beware! this variable is a only place holder for an element's CSS values.
-        
+        console.log("tagname",element.tagName)
+        console.log("color",elementStyle.color)
+        console.log("bgoclor",elementStyle.backgroundColor)
         if (elementStyle.color === "rgb(0, 0, 0)"){
-            element.style.color = "rgb(255,255,255)";
-        }else{
+            element.style.color = "rgb(255, 255, 255)";
+        }else if(elementStyle.color === "rgb(255, 255, 255)"){
             element.style.color = "rgb(0, 0, 0)";
+        }
+        if (elementStyle.backgroundColor === "rgb(0, 0, 0)"){
+            element.style.backgroundColor = "rgb(255, 255, 255)";
+        }else if(elementStyle.backgroundColor === "rgb(255, 255, 255)"){
+            element.style.backgroundColor = "rgb(0, 0, 0)";
         }
         
         

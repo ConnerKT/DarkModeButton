@@ -8,6 +8,7 @@ function dark() {
         document.getElementById("dark").setAttribute("src", "icons/lightmode.png");
    }
    var elements = document.getElementsByTagName("*");
+   var header = document.getElementsByTagName("header")[0];
    var bgcolor = document.body
     for (let x = 0; x < elements.length; x++){
         //grab element from array 
@@ -15,17 +16,17 @@ function dark() {
 
         //grab element's CSS values using built-in function
         let elementStyle = getComputedStyle(element)    //Beware! this variable is a only place holder for an element's CSS values.
-        console.log("tagname",element.tagName)
-        console.log("color",elementStyle.color)
-        console.log("bgoclor",elementStyle.backgroundColor)
-        if (elementStyle.color === "rgb(0, 0, 0)"){
+        // console.log("tagname",element.header)
+        // console.log("color",elementStyle.color)
+        // console.log("bgoclor",elementStyle.header)
+        if (elementStyle.color === "rgb(0, 0, 0)" || element === header) {
             element.style.color = "rgb(255, 255, 255)";
-        }else if(elementStyle.color === "rgb(255, 255, 255)"){
+        }else if(elementStyle.color === "rgb(255, 255, 255)" || element === header){
             element.style.color = "rgb(0, 0, 0)";
         }
-        if (elementStyle.backgroundColor === "rgb(0, 0, 0)"){
+        if (elementStyle.backgroundColor === "rgb(0, 0, 0)" || element === header){
             element.style.backgroundColor = "rgb(255, 255, 255)";
-        }else if(elementStyle.backgroundColor === "rgb(255, 255, 255)"){
+        }else if(elementStyle.backgroundColor === "rgb(255, 255, 255)" || element === header){
             element.style.backgroundColor = "rgb(0, 0, 0)";
         }
         

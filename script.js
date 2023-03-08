@@ -14,11 +14,8 @@ function dark() {
         //grab element from array 
         let element = elements[x]
 
-        //grab element's CSS values using built-in function
-        let elementStyle = getComputedStyle(element)    //Beware! this variable is a only place holder for an element's CSS values.
-        // console.log("tagname",element.header)
-        // console.log("color",elementStyle.color)
-        // console.log("bgoclor",elementStyle.header)
+      
+        let elementStyle = getComputedStyle(element)
         if (elementStyle.color === "rgb(0, 0, 0)" || element === header) {
             element.style.color = "rgb(255, 255, 255)";
         }else if(elementStyle.color === "rgb(255, 255, 255)" || element === header){
@@ -30,18 +27,7 @@ function dark() {
             element.style.backgroundColor = "rgb(0, 0, 0)";
         }
         
-        
-                                                      //Changing its values directly (elementStyle.color = black) wont have any affect on the element itself! 
-
-        //how to CHECK a CSS value on an element
-        //if (elementStyle.color == "black") {} RIGHT
-        //if (element.style.color == "black") {} WRONG (This is how we were doing it yesterday.)
-        
-        //how to CHANGE a CSS value on an element
-        // element.style.color = "black"   RIGHT
-        // elementStyle.color = "black"    WRONG
-
-
+       
     }
 
     

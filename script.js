@@ -19,18 +19,43 @@ function dark() {
         // console.log("tagname",element.header)
         // console.log("color",elementStyle.color)
         // console.log("bgoclor",elementStyle.header)
-        if (elementStyle.color === "rgb(0, 0, 0)" || element === header) {
+        if(element.tagName == "H1"){
+            console.log("tagname",element.tagName)
+            console.log("color",elementStyle.color)
+            console.log("bgoclor",elementStyle.backgroundColor)
+            console.log("==============BEFORE CHANGE=================")
+        }
+        if(element.tagName == "P"){
+            console.log("tagname",element.tagName)
+            console.log("color",elementStyle.color)
+            console.log("bgoclor",elementStyle.backgroundColor)
+            console.log("==============BEFORE CHANGE=================")
+        }
+   
+        if (elementStyle.color === "rgb(0, 0, 0)") {
             element.style.color = "rgb(255, 255, 255)";
-        }else if(elementStyle.color === "rgb(255, 255, 255)" || element === header){
+        }else if(elementStyle.color === "rgb(255, 255, 255)"){
             element.style.color = "rgb(0, 0, 0)";
         }
-        if (elementStyle.backgroundColor === "rgb(0, 0, 0)" || element === header){
+        if (elementStyle.backgroundColor === "rgb(0, 0, 0)"){
             element.style.backgroundColor = "rgb(255, 255, 255)";
-        }else if(elementStyle.backgroundColor === "rgb(255, 255, 255)" || element === header){
+        }else if(elementStyle.backgroundColor === "rgb(255, 255, 255)"){
             element.style.backgroundColor = "rgb(0, 0, 0)";
         }
+
         
-        
+        if(element.tagName == "H1"){
+            console.log("tagname",element.tagName)
+            console.log("color",elementStyle.color)
+            console.log("bgoclor",elementStyle.backgroundColor)
+            console.log("==============AFTER CHANGE=================")
+        }
+        if(element.tagName == "P"){
+            console.log("tagname",element.tagName)
+            console.log("color",elementStyle.color)
+            console.log("bgoclor",elementStyle.backgroundColor)
+            console.log("==============AFTER CHANGE=================")
+        }
                                                       //Changing its values directly (elementStyle.color = black) wont have any affect on the element itself! 
 
         //how to CHECK a CSS value on an element

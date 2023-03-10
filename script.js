@@ -26,6 +26,8 @@ function dark() {
         }else if(elementStyle.backgroundColor === "rgb(255, 255, 255)" || element === header){
             element.style.backgroundColor = "rgb(0, 0, 0)";
         }
+    
+
         
        
     }

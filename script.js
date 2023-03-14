@@ -28,15 +28,10 @@ function dark() {
         //grab element's CSS values using built-in function
         let elementStyle = getComputedStyle(element)    //Beware! this variable is a only place holder for an element's CSS values.
        
-        if (element.tagName === "H1"){
-            if (elementStyle.color === "rgb(0, 0, 0)"){
-                break;
-            }else if (elementStyle.color === "rgb(255, 255, 255)"){
-                break;
-            }else if (elementStyle.color === ""){
-                element.style.color = "rgb(0, 0, 0)"
+        if (element.tagName === "H1" || element.tagName === "H2" || element.tagName === "H3" || element.tagName === "H4" || element.tagName === "H5" || element.tagName === "H6"){
+            if (elementStyle.color === "rgb(0, 0, 0)" || elementStyle.color === "rgb(255, 255, 255)"){
+                continue;
             }
-        break;
         }
         
 

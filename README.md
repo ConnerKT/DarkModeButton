@@ -9,3 +9,9 @@ Its all in JavaScript!
 
 
 [Check It Out](https://connerkt.github.io/DarkModeButton/)
+
+## Want to add it to you code?
+
+The code in the javascript is a function you can use in your code to run it, just add it to a button of your choice and make sure to listen for an event!
+
+If you have any questions, leave a message!
